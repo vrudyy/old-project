@@ -1,0 +1,305 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+input[type="checkbox"] {
+  height: auto;
+  width: auto;
+}
+i{
+    color: #2c89ba;
+}
+body.waiting * {
+    cursor: progress;
+}
+#drop-area > div.in-drive-file-section > div:nth-child(1), #drop-area > div.in-drive-folder-section{
+    font-size: 16px;
+}
+body{
+    font-size: 16px;
+    background-color: #f7f7f7;
+    font-family: effra, "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+button{
+    outline: none;
+}
+#drop-area > div.in-drive-folder-section.in-row{
+    
+}
+#popup{
+    position: absolute;
+    color: white;
+    background: #579acc;
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 50%;
+    margin: 5px 25% 0 25%;
+    text-align: center;
+    border-radius: 5px;
+}
+button{
+    cursor:pointer;
+    background: none;
+    font-weight:bold;
+    border: none;
+}
+h2{
+    font-size: 2em;
+    padding: 20px 0;
+}
+h3{
+    font-size: 1.3em;
+}
+.widget{
+    background-color: #2c89ba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 100px;
+    min-height: 0;
+    font-size: 16px;
+    margin: 0 0 0 0;
+    outline: none;
+    font-weight: 100;
+}
+.left{
+    margin: 0 0 0 1%;
+}
+.widget:hover{
+    background: #329ad1;
+}
+.cwidget:hover{
+    background: #ededed;
+}
+.cwidget{
+    margin-left: 0;
+    background: none;
+    color: #2c89ba;
+    border: 1px dotted gray;
+    margin-left: 0;
+    background: none;
+    color: #2c89ba;
+    border: 1px dotted gray
+}
+.rwidget{
+    float: right;
+    margin-right: 1%;
+    margin-left: 0;
+    background: none;
+    color: white;
+    border: 1px dotted gray;
+    background: #d35656;
+    border: 1px dotted gray
+}
+.rwidget:hover{
+    background: #d65e5e;
+}
+.inputWrapper input, .inputWrapper span{
+    display: block;
+}
+.inputWrapper span{
+    text-align: left;
+    padding: 5px;
+    font-size: 0.8em;
+    min-height: 25px;
+    color: #ed2a3e;
+}
+.inputWrapper input, .inputWrapper select{
+    width: 100%;
+    color: gray;
+    outline: none;
+    min-height: 60px;
+    font-size: 1.2em;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-weight: 100;
+}
+/* FORM DAFAULTS */
+
+.form{
+    width: 50%;
+    margin: auto;
+    min-height: 500px;
+    text-align: center;
+}
+.form input{
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+.form button{
+    display: block;
+    margin: auto;
+    background-color: #2c89ba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.settings > div{
+    min-height: 160px;
+}
+.my_company > div{
+    min-height: 100px;
+}
+body > div > div.content > div > div > div:nth-child(1) > h3{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.settings .subsection{
+    padding: 15px 0 0 0;
+    min-height: 100px;
+}
+.settings .subsection h3, .settings .subsection button{
+    color: #2c89ba;
+    font-size: 22px;
+    outline: none;
+}  
+.error{
+        color: red;
+    font-size: 14px;
+    padding: 3px;
+}
+.settings .subsection a:hover{
+   text-decoration: underline;
+}  
+.settings .subsection p{
+    padding: 10px 0;
+    font-size: 16px;
+}
+.mycompanysection label, .mycompanysection input{
+    display: block;
+    margin: 5px 0;
+    min-height: 30px;
+    line-height: 25px;
+}
+.mycompanysection label{
+    text-align: right;
+    font-size: 18px;
+}
+.mycompanysection input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0 5px;
+}
+.mycompanysection > h3{
+    padding: 10px;
+}
+.mycompanysection{
+    background: #d9d9db;
+    margin: 0 0 20px 0;
+}
+body > div > div.content > div > div > form > div:nth-child(4) > button{
+    color: white;
+    background: #2c89ba;
+    border-radius: 5px;
+    padding: 10px;
+    float: left;
+    margin: 0 0 0 25px;
+    display: block;
+}
+/*BRANCHES PAGE*/
+.home-title{
+    height: 50px;
+    line-height: 50px;
+    background: #dddddd;
+    padding: 0 0 0 1.5%;
+    border-bottom: 1px solid gray;
+}
+.home-title h3{
+    float: left;
+}
+.home-title form{
+    padding-right: 10px;
+    float: right;
+}
+.home-title form button{
+    background-color: #2c89ba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 100px;
+    min-height: 0;
+    font-size: 16px;
+    margin: 0 0 0 0;
+    outline: none;
+    font-weight: 100;
+}
+.home-title a {
+    float: right;
+    background-color: #2c89ba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    min-width: 100px;
+    min-height: 0;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 5px 5px 5px 10px;
+    outline: none;
+    font-weight: 100;
+    text-align: center;
+}
+.cards{
+    width: 97%;
+    margin: 10px 1.5% 0 1.5%;
+    min-height: 350px;
+}
+.card-cover{
+    border-radius: 25px;
+    background: rgb(248, 248, 248);
+    height: 156px;
+    border: 1px solid gray;
+    margin: 0 0 20px 0;
+}
+.card-cover i{
+    float: right;
+    font-size: 32px;
+    position: relative;
+    bottom: 20px;
+    color: #424242;
+}
+#card-icon{
+    float: right;
+    font-size: 32px;
+    position: relative;
+    bottom: 20px;
+    color: #424242; 
+    
+}
+.card-cover .branchname button{
+    cursor: pointer;
+    color: #13608B;
+    border-bottom: 1px solid gray;
+    font-size: 22px;
+    padding: 0;
+    float: none;
+    border:none;
+}
+.card-cover .branchname button:hover{
+    color: #2c89ba;
+}
+.card-cover h3{
+    min-height: 19.2px;
+    margin: 5px 0;
+}
+.card-cover button{
+    outline: none;
+    color: gray;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    float: right;
+}
+.card-cover button:hover{
+    color: white;
+    background: lightgray;
+}

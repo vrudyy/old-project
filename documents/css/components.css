@@ -1,0 +1,666 @@
+.in-teach-tab-select{
+    background-color: lightsteelblue;
+}
+.in-course{
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid gray;
+    height: 50px;
+    line-height: 30px;
+    background: white;
+}
+.in-course i{
+    float: left;
+    color: #2c89ba;
+    font-size: 26px;
+    margin-right: 15px;
+}
+.in-drive-file-cover{
+    box-shadow: 1px 1px darkgrey, -1px -1px darkgrey;
+    background: white;
+}
+.in-drive-file-cover img{
+    display: block;
+    margin: 0 auto 1px auto;
+    width: 80px;
+}
+.in-button{
+    color: #474747;
+}
+.in-button:hover{
+    text-decoration: underline;
+}
+.in-fl-l{
+    float: left;
+}
+.in-fl-r{
+    float: right;
+}
+.in-drive-wrapper{
+    
+}
+.in-drive-header{
+    border-bottom: 1px solid gray;
+    background: white;
+}
+.in-drive-header > div{
+    line-height: 38.4px;
+    height: 38.4px;
+    font-weight: bold;
+}
+.in-drive-menu li{
+    font-size: 16px;
+    padding: 10px;
+    color: #4f4f4f;
+}
+.in-drive-menu i{
+    width: 45px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.in-drive-selected{
+    background: lightgray;
+}
+.in-drive-menu button{
+    font-size: 12px;
+    color: #4f4f4f;
+    font-weight: bold;
+}
+.in-course-button-menu{
+    display: none;
+    width: 200px;
+    position: absolute;
+    right: 10px;
+    top: 240px;
+}
+.in-course-button-menu ul{
+    width: 200px;
+    background: #fff;
+    position: absolute;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    box-shadow: 1px 1px gray, -1px -1px gray;
+}
+.in-course-button-menu li{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+.in-course-button-menu button{
+    padding: 0 10px;
+    color: #329ad1;
+    font-weight: 600;
+}
+.in-course-button-menu i{
+    font-size: 17px;
+    color: #383838;
+}
+.in-course-button-menu li:hover{
+    background: lightgray;
+}
+.in-upload-file-wrapper{
+    background: rgba(217, 217, 219, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.in-upload-file{
+    height: 25%;
+    width: 40%;
+    margin: 15% 30%;
+    background: white;
+    box-shadow: 1px 1px grey, -1px -1px grey;
+    border-radius: 5px;
+}
+.in-upload-file > div{
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #383838;
+}
+.in-upload-file > form{
+    padding: 10px;
+}
+.in-upload-file button{
+    display: block;
+    margin: 25px 0 0 0;
+}
+.in-drive-file-wrapper{
+    width: 180px;
+    cursor: default;
+}
+.in-drive-file{
+    background: white;
+    border: 1px solid darkgrey;
+    padding: 10px;
+    font-size: 17px;
+    color: #424242;
+}
+.in-drive-file i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.in-drive-file div{
+    width: 69%;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    height: 20px;
+    text-align: left;
+}
+
+.in-file{
+    
+}
+.in-folder{
+    
+}
+#in-drive-rc-menu{
+    position: absolute;
+    background: rgb(249, 249, 249);
+    padding: 5px 10px;
+    box-shadow: grey 1px 1px 5px;
+    width: 200px;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+#in-drive-rc-menu button{
+    color: #4f4f4f;
+    width: 66.66%;
+    text-align: left;
+}
+#in-drive-rc-menu i{
+    width: 33.33%;
+}
+#drop-area > div.in-drive-file-section.in-row > div > div > div:nth-child(2) > form > button, #drop-area > div.in-drive-file-section.in-row > div > div > div:nth-child(2) > form > a{
+    color: #424242;
+    font-size: 14px;
+    float: right;
+    font-weight: bold;
+}
+
+#drop-area > div.in-drive-file-section.in-row > div > div > div:nth-child(2) > form > button:hover, #drop-area > div.in-drive-file-section.in-row > div > div > div:nth-child(2) > form > a:hover{
+    color: #2c89ba;
+}
+.in-drive-file-selected{
+    background: #2c89ba;
+    color: #ffffff;
+}
+.in-drive-file-selected i{
+    color: #ffffff;
+}
+/*
+__________________________CSS FOR THE CARD ELEMENT__________________________________________
+
+*/
+
+.in-card-wrapper{
+    
+}
+.in-card{
+    border: 1px solid gray;
+    background: rgb(248, 248, 248);
+    min-height: 40px;
+}
+.in-card i{
+    text-align: right;
+}
+.in-card-title{
+    
+}
+.in-card-title button{
+    font-size: 16px;
+}
+.in-card-title button:hover{
+    text-decoration: underline;
+    color: #2c89ba;
+}
+.in-card-icon{
+    text-align: center;
+    font-size: 22px;
+}
+.in-card-details{
+    
+}
+.in-card span{
+    font-weight: 900;
+    padding-right: 10px;
+}
+.in-card-edit{
+    text-align: right;
+    margin-top: 30px;
+}
+.in-card-edit button:hover{
+    text-decoration: underline;
+    color: #2c89ba;
+}
+.in-card-heading{
+    font-size: 16px;
+    font-weight: bold;
+}
+/*_
+_________________________________END_____________________________________________________
+
+*/
+
+.in-tick{
+    font-size: 13px;
+    border: 1px solid gray;
+    background: white;
+}
+.in-tick-input button{
+    overflow: hidden;
+}
+
+/*
+
+    TUTOR FEES
+
+*/
+.tutor-fees-wrapper{
+    min-height: 290px;
+    border-bottom: 1px solid gray;
+    background: white;
+    padding: 10px;
+}
+.tutor-fees{
+    height: 130px;
+}
+.tutor-fees label{
+    font-size: 14px;
+}
+.tutor-fees input{
+    height: 30px;
+    width: 190px;
+    font-size: 14px;
+}
+.tutor-fees button{
+    display: block;
+}
+/*
+
+TUTOR-FILTER-STYLES
+
+*/
+.tutor-filter-wrapper{
+    height: 150px;
+    background: #c5c8cc;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 98%;
+    margin: 0 1%;
+    padding: 10px;
+}
+.tutor-filter{
+    height: 130px;
+}
+.tutor-filter-courses{
+    height: 45px;
+    line-height: 45px;
+}
+.tutor-filter-status{
+    height: 45px;
+    line-height: 45px;
+}
+.tutor-filter button{
+    padding: 5px 20px;
+}
+.tutor-filter i{
+    margin-left: 5px;
+    color: gray;
+}
+.tutor-filter-title{
+    height: 20px;
+    font-size: 14px;
+}
+.tutor-filter-selected{
+    background: white;
+}
+#filter-button{
+    border-radius: 0;
+    padding: 0;
+    background: none;
+    font-size: 32px;
+    min-width: auto;
+}
+#filter-form{
+    padding: 0;
+    float: left;
+}
+
+.in-settings-wrapper{
+    padding: 10px;
+}
+.in-settings{
+    background: rgb(242, 242, 242);
+    border: 1px dotted gray;
+    border-radius: 10px;
+    font-size: 13px;
+    padding-bottom: 30px;
+}
+
+.p0{
+    padding: 0;
+}
+.p5{
+    padding: 5px;
+}
+.m0{
+    margin: 0;
+}
+.mt10{
+    margin-top: 10px;
+}
+.in-error{
+    color: red;
+    padding: 0;
+    text-align: right;
+    clear: both;
+    height: 18px;
+}
+.cred{
+    color: red;
+}
+.ml10{
+    margin-left: 10px;
+}
+.ml5{
+    margin-left: 5px;
+}
+.in-form-unselect{
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+
+/*
+INVOICES
+*/
+.in-invoice-wrapper{
+    float: unset;
+    margin: auto;
+    min-height: 900px;
+    width: 900px;
+}
+.in-invoice{
+    border: 1px solid black;
+    background: #fff;
+    min-height: 1300px;
+    width: 900px;
+    margin: 10px 0 10px 0;
+    padding: 25px;
+}
+.in-invoice-company ul, .in-invoice-num ul{
+    text-align: right;
+}
+.in-invoice ul li {
+    font-size: 15px;
+}
+
+.in-invoice-table{
+    margin: 20px 0 0 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid black;
+}
+.in-invoice-table ul li{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 12px;
+}
+.in-invoice-table-data ul li{
+    border: none;
+    height: 45px;
+}
+in-invoice-table-totals{
+    padding: 5px;
+}
+.in-invoice-finals button{
+    margin: 0 10px 0 0;
+}
+.in-invoice-table-totals div:first-child {
+    text-align: left;
+}
+#drop-area > div > form > div{
+    font-size: 16px;
+}
+#drop-area > div > form > div > div.ck.ck-editor__main > div{
+    min-height: 200px;
+}
+.in-row-bank-details div{
+    padding: 2.5px;
+}
+body > div.wrapper > div.content > form > div.in-row.in-invoice > div:nth-child(5) > div > div{
+    padding: 2.5px;
+    margin: 25px 0 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.in-invoice-footer-message{
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+.in-invoice-editText-wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(217, 217, 219, 0.5);
+}
+.in-invoice-editText{
+    height: 35%;
+    width: 60%;
+    margin: 15% 20%;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+.class-no-student-title{
+    margin-top: 200px;
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+}
+.in-class-courses-titles{
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px 0;
+}
+.in-class-heading-wrapper div{
+    font-size: 14px;
+    text-align: center;
+    background: #579acc;
+    color: white;
+    font-weight: 500;
+    font-style: italic;
+}
+.in-class-head-title{
+    padding: 10px 0;
+    background: white;
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+}
+.in-class-row-wrapper > div{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    
+}
+.in-class-row-wrapper textarea{
+    width: 100%;
+    height: 79px;
+    border:none;
+    padding: 5px;
+    font-size: 14px;
+}
+.in-class-col{
+    padding: 10px 0;
+}
+.in-class-link{
+    height: 15px;
+    border: none;
+    text-align: left;
+    color: darkblue;
+    display: block;
+}
+#drop-area > div > div > form > div > div:nth-child(5) button{
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+}
+
+.in-sow-wrapper{
+    padding: 10px;
+}
+.in-sow-heading{
+    width: 95%;
+    background: white;
+    padding: 15px 0;
+    text-align: center;
+    font-style: italic;
+}
+.in-sow-headers{
+    width: 95%;
+}
+.in-sow-headers div{
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    background: #2c89ba;
+    color: white;
+}
+.in-sow-row{
+    width: 95%;
+    font-size: 14px;
+    border-bottom: 1px solid gray;
+    height: 110px;
+}
+.in-sow-row div{
+    border-right: 1px solid gray;
+}
+.in-sow-row textarea{
+    width: 100%;
+    height: 109px;
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+}
+.in-txt{
+    padding: 0;
+}
+.in-sow-row div:first-child, .in-sow-row div:nth-child(2){
+    text-align: center;
+    line-height: 110px;
+    padding: 0;
+}
+.in-sow-row div{
+    height: 110px;
+}
+.in-sow-row div:first-child{
+    border-left: 1px solid gray;
+}
+.in-sow-rows button{
+    line-height: 110px;
+    width: 5%;
+    height: 110px;
+    font-size: 18px;
+}
+.in-sow-row-res, .in-sow-row-ress{
+    border: none;
+    text-align: left;
+    line-height: normal;
+}
+.in-cknt{
+    background: white;
+    width: 70%;
+    min-height: 500px;
+    border: 1px solid black;
+    margin: 50px auto 0 auto;
+}
+.in-ptka > div{
+    background: lightblue;
+    padding: 0 5px;
+}
+.in-ptka div{
+    overflow: hidden;
+    height: 35px;
+    font-size: 16px;
+    width: 80%;
+    float: left;
+    line-height: 35px;
+}
+.in-ptka button{
+    width: 20%;
+    float: left;
+    line-height: 35px;
+    height: auto;
+    text-align: right;
+}
+#in-btsn{
+    margin-top: 20px;
+    border-radius: 3px;
+    display: block;
+    clear: both;
+    background: #2c89ba;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.in-sow-row textarea{
+    line-height: 18px;
+}
+#class-record-wrapper .otk{
+    background: #2c89ba;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+#class-record-wrapper > div > div {
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0;
+    background: #2c89ba;
+    color: white;
+}
+#classRecordStudent textarea, #classRecordStudent select{
+    width:100%;
+    height: 30px;
+}
+.in-student-profile{
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ddd;
+    border-radius: 6px 6px 6px 6px;
+    min-height: 300px;
+    background: white;
+}
+.in-row.in-student-profile-section {
+    min-height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+.in-student-pic img{
+    height: 120px;
+    border: 1px solid gray;
+}
+.in-student-name{
+    font-family: 'Open Sans','Helvetica','Arial';
+    color: #232333;
+    font-size: 20px;
+}
+.in-student-titles{
+    color: #747487;
+    font-size: 16px;
+    padding: 10px 10px 10px 20px;
+}

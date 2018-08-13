@@ -1,0 +1,43 @@
+.in-row{
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
+    float: left;
+    padding: 10px;
+}
+
+.col1{ width: 8.33%; }
+.col2{ width: 16.66%;}
+.col3{ width: 25%;}
+.col4{ width: 33.33%;}
+.col5{ width: 41.66%;}
+.col6{ width: 50%;}
+.col7{ width: 58.33%;}
+.col8{ width: 66.66%}
+.col9{ width: 75%;}
+.col10{ width: 83.33%;}
+.col11{ width: 91.66%;}
+.col12{ width: 100%;}
+
+@media (max-width:1175px) {
+    .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
+        width: 100%;
+    }
+    .in-card-title{
+        width: 80%;
+    }
+    .in-card-icon{
+        width: 20%;
+    }
+    .in-card-details{
+        width: 66.66%;
+    }
+    .in-card-edit{
+        width: 33.33%;
+        text-align: right;
+        float: right;
+        margin-top: 20px;
+    }
+}

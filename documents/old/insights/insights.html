@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Insights</title>
+	<script src="./Chart.js/dist/Chart.bundle.js"></script>
+	<script src="./Chart.js/samples/utils.js"></script>
+
+	<style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body>
+	<div style="width:75%;">
+
+		<!-- create the canvases -->
+
+		<canvas id="canvas1"></canvas>
+		<canvas id="canvas2"></canvas>
+		<canvas id="canvas3"></canvas>	
+
+	</div>
+	<br>
+	<br>
+	<script id="script-init">
+		var DATA_COUNT = 10;
+		var labels = [];
+
+		Samples.srand(2);
+
+		for (var i = 0; i < DATA_COUNT; ++i) {
+			labels.push('' + i);
+		}
+
+		Chart.helpers.merge(Chart.defaults.global, {
+			aspectRatio: 4/3,
+			tooltips: false,
+			layout: {
+				padding: {
+					top: 42,
+					right: 16,
+					bottom: 32,
+					left: 8
+				}
+			},
+			elements: {
+				line: {
+					fill: false
+				},
+				point: {
+					hoverRadius: 7,
+					radius: 5
+				}
+			},
+			plugins: {
+				legend: false,
+				title: false
+			}
+		});
+	</script>
+
+	<script>
+
+		//Configuration of the first graph
+		var config1 = {
+			type: 'line',
+			data: {
+				labels: ['2014-2015', '2015-2016', '2016-2017', '2017-2018','2018-2019'],
+				datasets: [{
+					label: 'Total Number of students who made at least one payment during the school year',
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: 
+					[
+						25,
+						70,
+						100,
+						150,
+						30
+					],
+					fill: true,
+					cubicInterpolationMode: 'monotone'
+
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'Number of Students Per School Year'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'School Year'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Number of Students'
+						}
+					}]
+				}
+			}
+		};
+
+	//Configuration of the second graph 
+
+			var config2 = {
+			type: 'line',
+			data: {
+				labels: ['2014-2015', '2015-2016', '2016-2017', '2017-2018','2018-2019'],
+				datasets: [{
+					label: 'Revenue per school year',
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: 
+					[
+						25000,
+						70000,
+						10000,
+						150000,
+						300000
+					],
+					fill: true,
+					cubicInterpolationMode: 'monotone'
+
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'Total payments'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'School Year'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Amount'
+						}
+					}]
+				}
+			}
+		};
+
+	//Configuration of the bar chart  
+
+		var barChartData = {
+			labels: ['Homework', 'Concentration', 'Participation'],
+			datasets: [
+			{
+				label: 'Poor',
+				backgroundColor: window.chartColors.red,
+				data: [
+					3,
+					6,
+					5
+				]
+			},
+			{
+				label: 'Satisfactory',
+				backgroundColor: window.chartColors.orange,
+				data: [
+					7,
+					14,
+					25
+				]
+			},
+			{
+				label: 'Good',
+				backgroundColor: window.chartColors.blue,
+				data: [
+					14,
+					34,
+					34
+				]
+			},
+			{
+				label: 'Excellent',
+				backgroundColor: window.chartColors.green,
+				data: [
+					76,
+					46,
+					36
+				]
+
+			}
+
+			]
+		};
+
+		var configBarChart = {
+				type: 'bar',
+				data: barChartData,
+				options: {
+					plugins: {
+					datalabels: {
+						color: 'white',
+						display: function(context) {
+							return context.dataset.data[context.dataIndex] > 15;
+						},
+						font: {
+							weight: 'bold'
+						},
+						formatter: Math.round
+					}
+					},
+
+					title: {
+						display: true,
+						text: 'Performance of the student XXXX for the class YYY'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: false
+					},
+					responsive: true,
+					scales: {
+						xAxes: [{
+							stacked: true,
+						}],
+						yAxes: [{
+							stacked: true
+						}]
+					}
+				}
+			};
+
+		window.onload = function() {
+
+			//Adding the graphs
+			var ctx1 = document.getElementById('canvas1').getContext('2d');
+			window.myLine1 = new Chart(ctx1, config1);
+
+			var ctx2 = document.getElementById('canvas2').getContext('2d');
+			window.myLine2 = new Chart(ctx2, config2);
+
+			var ctxBarChart = document.getElementById('canvas3').getContext('2d');
+			window.myBarChart = new Chart(ctxBarChart, configBarChart);
+		};
+
+		
+	</script>
+</body>
+
+</html>
